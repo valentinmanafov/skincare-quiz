@@ -1,0 +1,70 @@
+.slider-container {
+  position: relative;
+}
+
+.slider-track {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  width: 100%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  width: 100%;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 105%;
+  bottom: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-button {
+  width: 60px;
+  height: 60px;
+  background: #EEF7FB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.slider-button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.slider-indicators {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 20%;
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #E3E3E3;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #5BC1ED;
+}
+
+.indicator:hover {
+  background: #5BC1ED;
+  opacity: 0.7;
+}
+

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Grange';
+  src: url('../assets/fonts/fonnts.com-Grange_Medium_Extended.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.start-page {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.start-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-image: url('../assets/images/BGIMG.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+
+.start-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.start-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.start-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 21px; 
+}
+
+.start-title {
+  font-family: 'Grange', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 500px;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+
+}
+
+.start-subtitle {
+  font-family: 'Proxima Nova', sans-serif;
+  width: 300px;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.start-button {
+  font-family: 'Proxima Nova', sans-serif;
+  background: #C3EDFF;
+  color: #1C2635;
+  padding: 14px 46px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.start-button:hover{
+  transform: translateY(-2px);
+}

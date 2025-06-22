@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova_light.otf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  transform-origin: 50% 50%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  color: #1C2635;
+}
